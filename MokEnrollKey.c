@@ -47,6 +47,7 @@ EFI_GUID global_variable_guid = EFI_GLOBAL_VARIABLE;
   }
 
 typedef VOID *SHELL_FILE_HANDLE;
+#if 0
 typedef struct _EFI_SHELL_PARAMETERS_PROTOCOL {
   CHAR16 **Argv;
   UINTN Argc;
@@ -54,7 +55,7 @@ typedef struct _EFI_SHELL_PARAMETERS_PROTOCOL {
   SHELL_FILE_HANDLE StdOut;
   SHELL_FILE_HANDLE StdErr;
 } EFI_SHELL_PARAMETERS_PROTOCOL;
-
+#endif
 static inline int
 guid_cmp(EFI_GUID *a, EFI_GUID *b)
 {

@@ -17,6 +17,7 @@ endif
 
 LDFLAGS         = -nostdlib -znocombreloc -T $(EFI_LDS) -shared \
 	-Bsymbolic -L $(EFILIB) -L $(LIB) $(EFI_CRT_OBJS) 
+.PRECIOUS: loadefi.o loadefi.so
 
 all: $(TARGET)
 
