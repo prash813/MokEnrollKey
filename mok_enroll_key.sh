@@ -22,10 +22,10 @@ cp -f $BIN $TARBIN || exit $?
 
 if [ ! -f $LOADBIN ]; then
 	echo "Cannot find $LOADBIN"
-	exit 1
+	#prash exit 1
 fi
 
-cp -f $LOADBIN $TARLOADBIN || exit $?
+#prash cp -f $LOADBIN $TARLOADBIN || exit $?
 
 #set uefi variable with Mok.der
 if [ -f $EFIVAR ]; then
@@ -47,7 +47,7 @@ if [ -f $EFIVAR_SB ]; then
 fi
 
 printf "\x07\x00\x00\x00\x01" > temp.der
-cp -f temp.der $EFIVAR_SB || exit $?
+#prash cp -f temp.der $EFIVAR_SB || exit $?
 rm -f temp.der
 
 # Check and delete if mok_enroll_key already
@@ -74,4 +74,4 @@ BOOTNUM=`efibootmgr -v | grep 'mok_enroll_key' | cut -d ' ' -f1 | tr -d [BootOOT
 efibootmgr -n $BOOTNUM | grep "BootNext: $BOOTNUM" > /dev/null 2>&1 || exit $?
 
 
-reboot
+#reboot

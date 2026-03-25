@@ -568,6 +568,7 @@ out:
 	}
 
 	FreePool(derbuf);
+
 	derbuf = NULL;
 
 	status = delete_boot_entry();
