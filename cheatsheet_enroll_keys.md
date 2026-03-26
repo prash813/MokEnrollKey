@@ -26,9 +26,9 @@ openssl req -new -x509 -newkey rsa:2048 -keyout MOK_dh470.priv -outform DER -out
 
 # Once `MokEnrollKey.efi` finishes UEFI firmware/grub provides you an option to enter into UEFI settings
 
-#Enter the setting and enable secure boot. save & exit
+- Enter the setting and enable secure boot. save & exit
 
-#Let the system boot normally.
+- Let the system boot normally.
 
 # From the command prompt. Type following commands to see if secure boot is enabled and also to see your enrolled keys
 ```
