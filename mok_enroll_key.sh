@@ -5,7 +5,8 @@ LOADBIN=UbuntuSecBoot.efi
 TARBIN=/boot/efi/EFI/ubuntu/MokEnrollKey.efi
 TARLOADBIN=/boot/efi/EFI/ubuntu/UbuntuSecBoot.efi
 EFIVAR=/sys/firmware/efi/efivars/MokKeyEnroll-e22021f7-3a03-4aea-8b4c-65881a2b8881
-DER=/var/lib/shim-signed/mok/MOK.der
+#orig DER=/var/lib/shim-signed/mok/MOK.der
+DER=MOK_dh470.der
 EFIVAR_SB=/sys/firmware/efi/efivars/MokSBEnable-21e2d0b5-ea3a-4222-85e6-8106ad766df0
 
 if [ "$(id -u)" -ne 0 ]; then
