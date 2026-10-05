@@ -8,5 +8,7 @@ for helping to run MokEnrollKey automatically
 - 2.put the script and uefi application together
 - 3.run the script with root privilge
   for example,
-  # sudo ./mok_enroll_key.sh /dev/sdb
+  ```
+   sudo ./mok_enroll_key.sh /dev/sdb
+  ```
 - 4.after reboot, you could enable secureboot
